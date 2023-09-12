@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Translate Replica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="google_logo.png" alt="Google">
+    </div>
+    <div class="translate-container">
+      <div class="language-select">
+        <select id="sourceLanguage">
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <!-- Add more language options -->
+        </select>
+        <img src="swap_icon.png" alt="Swap">
+        <select id="targetLanguage">
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <!-- Add more language options -->
+        </select>
+      </div>
+      <div class="text-area">
+        <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+        <button id="translateButton">Translate</button>
+      </div>
+      <div class="text-area">
+        <textarea id="translatedText" placeholder="Translation will appear here..." readonly></textarea>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
